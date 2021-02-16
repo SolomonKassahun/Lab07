@@ -1,0 +1,47 @@
+img{
+    height: 455px;
+    margin-top: 50px;
+    margin-left: 400px;
+    
+}
+
+    .clock {
+    margin-top: -430px;
+    margin-left: -27px;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    }
+
+    .hand.second {
+        --rotation:4;
+    width: 3px;
+    height: 130px;
+    background-color:red;
+    }
+    .hand.minute {
+        --rotation :6;
+        width: 3px;
+        height: 110px;
+        background-color: black;
+    }
+
+    .hand.hour {
+        --rotation : 10;
+            width: 3px;
+            height: 80px;
+            background-color: black;
+    }
+
+
+    .hand {
+
+    --rotation:0;
+    position: absolute;
+    bottom: 50%;
+    left: 650px;
+    border-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
