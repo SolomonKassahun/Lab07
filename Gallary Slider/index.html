@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>image gallary</title>
+</head>
+<body>
+    
+
+<div class="container">
+    <div class="mySlides">
+      <img  src="https://picsum.photos/id/870/200/300?grayscale&blur=2" style="width:1500px; height: 450px;">
+    </div>
+  
+    <div class="mySlides">
+      <img src="https://picsum.photos/200/300"  style="width:1500px; height: 450px;">
+    </div>
+  
+    <div class="mySlides">
+      <img src="https://picsum.photos/id/237/200/300" style="width:1500px; height: 450px;">
+    </div>
+      
+    <div class="mySlides">
+      <img src="https://picsum.photos/seed/picsum/200/300" style="width:1500px; height: 450px;">
+    </div>
+  
+    <div class="mySlides">
+      <img src="https://picsum.photos/200/300?grayscale" style="width:1500px; height: 450px;">
+    </div>
+      
+    <div class="mySlides">
+      <img src="https://picsum.photos/200/300/?blur" style="width:1500px; height: 450px;">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column" id="small">
+        <img class="demo cursor" src="https://picsum.photos/id/870/200/300?grayscale&blur=2" style="width:100%" onclick="currentSlide(1)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://picsum.photos/200/300" style="width:100%" onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://picsum.photos/id/237/200/300" style="width:100%" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://picsum.photos/seed/picsum/200/300" style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://picsum.photos/200/300?grayscale" style="width:100%" onclick="currentSlide(5)" alt=>
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="https://picsum.photos/200/300/?blur" style="width:100%" onclick="currentSlide(6)" alt="">
+      </div>
+    </div>
+  </div>
+    <script src="asset/js/image.js"></script>
+    <script src="asset/js/app.js"></script>
+</body>
+</html>
